@@ -31,7 +31,7 @@ I found that as I was working I kind of understood things a lot better.
 
 ##### Take-Aways :
 
-I think it went really well, better than I thought it would to be honest. Pretty happy wit the progress so far. Once I got everything set up the rest went relatively smoothly, which was great. 
+I think it went really well, better than I thought it would to be honest. Pretty happy with the progress so far. Once I got everything set up the rest went relatively smoothly, which was great. 
 
 Though it  was already clear before, Sinatra kind of emphasised this for me : A typo helped end WWII, it can also break your code. don't underestimate the power typos, if it doesn't need to be there it will only get in the way!! 
 
