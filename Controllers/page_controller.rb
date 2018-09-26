@@ -87,7 +87,8 @@ class App < Sinatra::Base
       :title => params[:title],
       :cover => params[:cover],
       :year => params[:year],
-      :author => params[:author]
+      :author => params[:author],
+      :description => params[:description]
     }
 
     $books.push newBook
@@ -106,6 +107,7 @@ class App < Sinatra::Base
     book[:cover] = params[:cover]
     book[:year] = params[:year]
     book[:author] = params[:author]
+    book[:description] = params[:description]
 
     $books[id] = book
 
