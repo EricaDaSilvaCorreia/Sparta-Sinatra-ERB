@@ -1,0 +1,12 @@
+<h1 style="text-align: center">H O M E</h1>
+
+<% @books.each do |book| %>
+
+  <h3 style="text-align: center"> <%= book[:id] %></h3>
+  <img src="<%= book[:cover] %>" alt="" style="display:block; margin-left: auto; margin-right: auto" height="300" width="200">
+  <h1 style="text-align: center"><a href="/Books/<%= book[:id] %>"><%= book[:title] %></a></h1>
+  <h3 style="text-align: center">Published : <%= book[:year] %></h3>
+  <h4 style="text-align: center">Author : <%= book[:author] %></h4>
+
+
+<% end %>

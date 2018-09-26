@@ -1,0 +1,15 @@
+
+<img src="<%= @book[:cover] %>" alt="" height="300" width="200">
+
+<h1><%= @book[:title] %></h1>
+<h3>Published in <%= @book[:year] %></h3>
+<h3>By <%= @book[:author] %></h3>
+<h5 style="width: 500px;"> <%= @book[:description] %></h5>
+
+<a href="/Books/<%= @book[:id]
+ %>/edit">Edit</a>
+
+<form class="" action="index.html" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="delete">
+</form>
