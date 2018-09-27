@@ -98,7 +98,7 @@ class App < Sinatra::Base
   end
 
   # Update
-  put '/Books/:id'do
+  put '/books/:id'do
   id = params[:id].to_i - 1
 
     book = $books[id]
