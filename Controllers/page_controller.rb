@@ -57,25 +57,25 @@ class App < Sinatra::Base
   ]
 
   # Index
-  get '/Books' do
+  get '/books' do
     @title = "Index Page"
     @books = $books
-    erb :'Books/index'
+    erb :'books/index'
   end
 
   # New
-  get '/Books/new' do
+  get '/books/new' do
 
-    erb :'Books/new'
+    erb :'books/new'
   end
 
 
   # Show
-  get '/Books/:id'do
+  get '/books/:id' do
     id = params[:id].to_i
 
     @book = $books[id - 1]
-    erb :'Books/show'
+    erb :'books/show'
   end
 
   # Create
@@ -93,7 +93,7 @@ class App < Sinatra::Base
 
     $books.push newBook
 
-    redirect '/Books'
+    redirect '/books'
 
   end
 
@@ -111,25 +111,25 @@ class App < Sinatra::Base
 
     $books[id] = book
 
-    redirect '/Books'
+    redirect '/books'
 
   end
 
   # Destroy
-  delete '/Books/:id'do
+  delete '/books/:id'do
   id = params[:id].to_i
   $books.delete_at id
 
-  redirect '/Books'
+  redirect '/books'
 
   end
 
   # Edit
-  get '/Books/:id/edit'do
+  get '/books/:id/edit'do
   id = params[:id].to_i
   @book = $books[id - 1]
 
-  erb :'Books/edit'
+  erb :'books/edit'
 
   end
 

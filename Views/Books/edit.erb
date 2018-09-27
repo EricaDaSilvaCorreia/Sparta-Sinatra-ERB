@@ -1,4 +1,4 @@
-<form action="/Books/<%= @book[:id] %>" method="POST">
+<form action="/books/<%= @book[:id] %>" method="POST">
 
   <div class="form-group">
     <label for="exampleInputEmail1">Title</label>
@@ -7,7 +7,7 @@
 
   <div class="form-group">
     <label for="exampleInputEmail1">Cover </label>
-    <input type="text" class="form-control"  placeholder="Cover" name="<%= @book[:cover] %>">
+    <input type="text" class="form-control"  placeholder="<%= @book[:cover] %>" name="<%= @book[:cover] %>">
   </div>
 
   <div class="form-group">
